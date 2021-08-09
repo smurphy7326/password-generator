@@ -16,4 +16,7 @@
 * Confirmed there was needed a Lowercase letter needed in the password
 
 ### Version 1.3 - 
+* Added Special Characters for the password
 
+### Version 1.4 -
+* Added Uppercase Letters and Lowercase Letters for javascript
