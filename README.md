@@ -24,7 +24,7 @@
 ### Version 1.5 - 
 * Generate Button Added
 
-### Version 1.6 - 
+### Version 1.6 - Number of characters
 * Confirming the number of characters there shoudl be in the password
 
 ### Version 1.7 - 

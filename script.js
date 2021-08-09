@@ -49,7 +49,14 @@ function generatePassword() {
   } else {
     // Continues once the use input is validated 
     confirmNumber = confirm("Will this password contain numbers?");
-    
+    confirmCharacter = confirm("Will this contain special characters?");
+    confirmLowercase = confirm("Will this contain Lowercase letters?");
+    confirmUppercase = confirm("Will this contain Uppercase letters?");
+  };
+
+  // Make sure you choose one of the criteria above
+  if (!confirmCharacter && !confirmNumber && !confirmLowercase && !confirmUppercase) {
+    choices = character (number, confirmLowercase, confirmUppercase);
   }
 }
 
