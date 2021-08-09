@@ -8,6 +8,11 @@ var confirmCharacter;
 var confirmUppercase;
 var confirmLowercase;
 
+// Start Password Variable values:
+// Special Characters
+
+character = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "[", "]", "{", "}", "|", "-", "+", "=", "_", "/", "|", "<", ">", "'", ":", "~", "`", "€"];
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
