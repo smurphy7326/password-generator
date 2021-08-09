@@ -20,3 +20,12 @@
 
 ### Version 1.4 -
 * Added Uppercase Letters and Lowercase Letters for javascript
+
+### Version 1.5 - 
+* Generate Button Added
+
+### Version 1.6 - 
+* Confirming the number of characters there shoudl be in the password
+
+### Version 1.7 - 
+* 
