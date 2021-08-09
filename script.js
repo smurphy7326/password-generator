@@ -1,5 +1,12 @@
 // Assignment code here
+// Working Code Starts Here
+// User Input Variables
 
+var enter;
+var confirmNumber;
+var confirmCharacter;
+var confirmUppercase;
+var confirmLowercase;
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
