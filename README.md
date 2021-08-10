@@ -25,7 +25,13 @@
 * Generate Button Added
 
 ### Version 1.6 - Number of characters
-* Confirming the number of characters there shoudl be in the password
+* Confirming the number of characters there should be in the password
 
 ### Version 1.7 - 
-* 
+* Confirming there should be numbers in the password
+* Confirming there should be Uppercase letters in the password
+* Confirming there should be Lowercase Letters in the password
+
+### Version 1.8 - If three or two options are choosen
+* Wrote in Javascript for if three options are choosen
+* Wrote if two options were choosen

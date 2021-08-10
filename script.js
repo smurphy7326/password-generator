@@ -56,8 +56,49 @@ function generatePassword() {
 
   // Make sure you choose one of the criteria above
   if (!confirmCharacter && !confirmNumber && !confirmLowercase && !confirmUppercase) {
-    choices = character (number, confirmLowercase, confirmUppercase);
+    choices = alert("You must choose a critia!");
   }
+
+  // Else if for three positive options choosen
+  else if (confirmCharacter && confirmNumber && confirmUppercase) {
+    choices = character.concat(number, Uppercase);
+  }
+
+  else if (confirmCharacter && confirmNumber && confirmLowercase) {
+    choices = character.concat(number, Lowercase);
+  }
+
+  else if (confirmCharacter && confirmLowercase && confirmLowercase) {
+    choices = character.concat(confirmLowercase, confirmUppercase);
+  }
+
+  // else if for two positive options choosen
+
+  else if (confirmCharacter && confirmNumber) {
+    choices = character.concat(number);
+  }
+
+  else if (confirmCharacter && confirmLowercase) {
+    choices = character.concat(Lowercase);
+  }
+
+  else if (confirmCharacter && confirmUppercase) {
+    choices = character.concat(Uppercase);
+  }
+
+  else if (confirmLowercase && confirmNumber) {
+    choices = character.concat(number);
+  }
+
+  else if (confirmLowercase && confirmUppercase) {
+    choices = character.concat(Uppercase);
+  }
+
+  else if (confirmNumber && confirmUppercase) {
+    chioces = number.concat(Uppercase);
+  }
+
+  // if only one option is choosen
 }
 
 
