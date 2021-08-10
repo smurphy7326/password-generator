@@ -99,6 +99,27 @@ function generatePassword() {
   }
 
   // if only one option is choosen
+
+  else if (confirmCharacter) {
+    choices = character;
+  }
+
+  else if (confirmNumer) {
+    choices = number;
+  }
+
+  else if (confirmLowercase) {
+    chioces = Lowercase;
+  }
+
+  else if (confirmUppercase) {
+    chioces = space.concat(Uppercase);
+  }
+
+// Random Variable Selection
+for (var i = 0; i < enter; i++) {
+  var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+  password.push(pickChoices);
 }
 
 
