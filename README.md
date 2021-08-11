@@ -35,3 +35,8 @@
 ### Version 1.8 - If three or two options are choosen
 * Wrote in Javascript for if three options are choosen
 * Wrote if two options were choosen
+
+### Version 1.9 - Changing Character Length
+* Changing the character length prompt among other areas
+
+
