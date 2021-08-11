@@ -19,45 +19,159 @@ Character = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "[", "]", "{", "}
 
 // Start assignment Code here
 
+// stores password info in object
+
+var passwordInfo = {
+  passwordLength: getPasswordLength,
+  includeLowerCase: includeLowerCase,
+  includeUpperCase: includeUpperCase,
+  includeNumbers: includeNumbers,
+  includespecial: includespecial
+};
+
+return passwordInfo;
+}
+
+// Get a random character from an array
+function getRandomChar(arr) {
+var randomChar = Math.floor(MAth.random() * arr.length);
+var selectChar = arr (randomChar);
+
+return selectChar;
+}
+
 function generatePassword() {
-  var generatePassword() {
-  var getPasswordLength = parseInt(prompt("How many characters would like your password to be?"));
-  // First the first statement for user validation
-  if (getPasswordLength < 8 ) {
-    alert("A minimum number of 8 characters required.");
-    generatePassword();
-  }
 
-  if (getPasswordLength > 128) {
-    alert(" A Maximum number of 128 characters required.");
-    generatePassword();
-  }
+// passwordInfo object
+var passwordIncludes = generatePasswordInfo();
 
-  if(isNaN(getPasswordLength)) {
-    alert("Invalid input. Please insert a number.");
-    generatePassword();
-  }
+// Store created password
+var createdPassword = [];
 
-  // Confirm including lowercase letters
-  var includeLowerCase = window.confirm("Click OK to include lowercase characters");
+// Array to store types of characters to include in password
+car availableCharacters = [];
 
-  // Confirm including uppercase letter
+//adds array of lower characters
+if(passwordIncludes.includeLowerCase) {
+  availableCharacters = availableCharacters.concat(lowerCaseChar);
+}
 
-  var includeUpperCase = window.confirm("Click OK to include uppercase characters");
+// adds upper characters 
+if(passwordIncludes.includeUpperCase) {
+  availableCharacters = availableCharacters.concat(upperCaseChar);
+}
 
-  // Confirm including numbers
+// adds numbers
+if(passwordIncludes.includeNumbers) {
+  availableCharacters = availableCharacters.concat(numbersChar);
+}
 
-  var includeNumbers = window.confirm("click OK to include numbers");
+//adds special characters
 
-  // Confirm including special charcaters
+if(passwordIncludes.includespecial) {
+availableCharacters = availableCharacters.concat (specialChar);
+}
 
-  var includespecial = window.confirm("click OK to include special characters");
+// Password length random things will be included 
+for (var i = 0); i < passwordIncludes.passwordLength; i++) {
+var c = getRandomChar(availableCharacters);
+}
 
-  if (!includeLowerCase && !includeUpperCase && !includeNumbers && !includespecial) {
-    alert("Minimum of 1 character type needed.");
-    return;
-  }   
+return createdPassword.join("");
 
+}
+
+  // Confirm user input for the value
+  // Start user input prompts 
+  enter = parseInt(prompt("You should choose between 8 and 128"));
+
+} else {
+  // Continues once the use input is validated 
+  confirmNumber = confirm("Will this password contain numbers?");
+  confirmCharacter = confirm("Will this contain special characters?");
+  confirmLowercase = confirm("Will this contain Lowercase letters?");
+  confirmUppercase = confirm("Will this contain Uppercase letters?");
+};
+
+// Make sure you choose one of the criteria above
+if (!confirmCharacter && !confirmNumber && !confirmLowercase && !confirmUppercase) {
+  choices = alert("You must choose a critia!");
+}
+
+// Else if for three positive options choosen
+else if (confirmCharacter && confirmNumber && confirmUppercase) {
+  choices = character.concat(number, Uppercase);
+}
+
+else if (confirmCharacter && confirmNumber && confirmLowercase) {
+  choices = character.concat(number, Lowercase);
+}
+
+else if (confirmCharacter && confirmLowercase && confirmLowercase) {
+  choices = character.concat(confirmLowercase, confirmUppercase);
+}
+
+// else if for two positive options choosen
+
+else if (confirmCharacter && confirmNumber) {
+  choices = character.concat(number);
+}
+
+else if (confirmCharacter && confirmLowercase) {
+  choices = character.concat(Lowercase);
+}
+
+else if (confirmCharacter && confirmUppercase) {
+  choices = character.concat(Uppercase);
+}
+
+else if (confirmLowercase && confirmNumber) {
+  choices = character.concat(number);
+}
+
+else if (confirmLowercase && confirmUppercase) {
+  choices = character.concat(Uppercase);
+}
+
+else if (confirmNumber && confirmUppercase) {
+  chioces = number.concat(Uppercase);
+}
+
+// if only one option is choosen
+
+else if (confirmCharacter) {
+  choices = character;
+}
+
+else if (confirmNumer) {
+  choices = number;
+}
+
+else if (confirmLowercase) {
+  chioces = Lowercase;
+}
+
+else if (confirmUppercase) {
+  chioces = space.concat(Uppercase);
+}
+
+// Random Variable Selection
+for (var i = 0; i < enter; i++) {
+var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+password.push(pickChoices);
+}
+
+// This password array 
+var ps = password.join("");
+UserInput(ps)
+return ps;
+
+// Put the password value into the textbox
+// Changed function to use textcontent
+
+function UserInput(ps) {
+document.getElementById("password").textContent = ps;
+}
   // Code given for the assignment 
   
   var generateBtn = document.querySelector("#generate");
@@ -74,5 +188,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
