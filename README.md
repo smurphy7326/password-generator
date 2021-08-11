@@ -39,4 +39,10 @@
 ### Version 1.9 - Changing Character Length
 * Changing the character length prompt among other areas
 
+### Version 1.10 - 
+* Tutor helped out with working new code
+
+### Version 1.11 - Brought old code back
+* Copied code back that I replaced when a tutor from AskBCS helped
+* 
 
